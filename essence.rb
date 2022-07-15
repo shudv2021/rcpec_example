@@ -1,4 +1,5 @@
 class Essence
+  attr_reader :name, :energy
   
   def initialize(name, energy = 100)
     @name = name.capitalize
