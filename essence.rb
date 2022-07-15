@@ -1,8 +1,16 @@
 class Essence
   
-  def initialize (name, health = 100)
+  def initialize(name, energy = 100)
     @name = name.capitalize
-    @health = health
+    @energy = energy
+  end
+    
+    def add_energy
+      @energy += 10
+    end
+    
+    def decrease_energy
+      @energy -= 10
     end
 end
 
