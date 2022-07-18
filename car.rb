@@ -4,7 +4,7 @@ class Car
   
   attr_reader :fuel
   
-  def initilize 
+  def initialize
     @fuel = 0
   end
   
@@ -13,6 +13,6 @@ class Car
   end
   
   def distance
-    0
+    MILEST_PER_GALON * @fuel
   end
 end
